@@ -28,6 +28,9 @@ namespace RelyITS
 
                 channel.BasicConsume(queue: "Receipt", autoAck: true, consumer: consumer);
 
+                var sender = new MessageSender();
+                sender.Send("SiustiJson", "");
+
                 Console.WriteLine("Scheduled job started");
             }
         }
