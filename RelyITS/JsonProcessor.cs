@@ -12,8 +12,15 @@ namespace RelyITS
         {
             var deserializedObject = DeserializeFromXML(message);
             var filePath = @"C:\temp\Receipt.json";
+
+            if (!File.Exists(filePath))
+            {
+                File.Create(filePath).Close();
+            }
+
             var jsonData = File.ReadAllText(filePath);
             var receiptList = JsonConvert.DeserializeObject<List<ReceiptJson>>(jsonData) ?? new List<ReceiptJson>();
+
             receiptList.Add(new ReceiptJson()
             {
                 Date = DateTime.Now.Date,
@@ -22,10 +29,15 @@ namespace RelyITS
                 TotalAmount = deserializedObject.transaction.retailTransactions[0].lineItem.Sale.Quantity,
                 TotalReceipts = 1
             });
+
             var instance = new DatabaseConnection();
             instance.Connection(deserializedObject.transaction.SequenceNumber, deserializedObject.transaction.UnitIDs[0].UnitID, deserializedObject.transaction.retailTransactions[0].lineItem.Sale.Quantity, deserializedObject.transaction.retailTransactions[0].Total);
+
             jsonData = JsonConvert.SerializeObject(receiptList);
             File.WriteAllText(filePath, jsonData);
+
+            var messageSender = new MessageSender();
+            messageSender.Send("SiustiJson", jsonData);
         }
 
         private Structure.POSLog DeserializeFromXML(string message)
