@@ -2,27 +2,11 @@
 using RabbitMQ.Client;
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
-using System.Dynamic;
 using System.IO;
-using System.Text.Json;
-using System.Text.Json.Serialization;
-using System.Threading.Channels;
-using System.Transactions;
-using System.Xml;
-using System.Xml.Linq;
 using System.Xml.Serialization;
-using RabbitMQ.Client.Events;
-using System.Threading;
 using System.Text;
-using System.Reflection;
 using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.Data.SqlClient;
-using System.ComponentModel.Design;
-using RelyITS;
-using System.Collections;
-using Newtonsoft.Json.Linq;
+
 
 namespace RelyITS
 {
@@ -30,26 +14,18 @@ namespace RelyITS
 	{
 		public static void Main()
 		{
-			var DailyTime = "13:00:00"; //Time to execute code
-			var timeParts = DailyTime.Split(new char[1] { ':' });
+			var consumer = new Consumer();
+			var timer = new ConsumerTimer(consumer);
+			timer.Start();
+
+			Console.WriteLine("Scheduled job started. Enter 'exit' to stop.");
 			while (true)
 			{
-				var dateNow = DateTime.Now;
-				var date = new DateTime(dateNow.Year, dateNow.Month, dateNow.Day,
-				int.Parse(timeParts[0]), int.Parse(timeParts[1]), int.Parse(timeParts[2]));
-				TimeSpan ts;
-				if (date > dateNow)
-				ts = date - dateNow;
-				else
-				{
-					date = date.AddDays(1);
-					ts = date - dateNow;
-				}
-				Console.WriteLine("Waiting for {0}", DailyTime);
-				Task.Delay(ts).Wait();
-				var instance = new Consumer();
-				instance.ConsumeQueue();
+				var input = Console.ReadLine();
+				if (input?.ToLower() == "exit")
+					break;
 			}
+			timer.Stop();
 		}
 		public static void ReadAndWriteToJson(string message)
 		{
@@ -84,7 +60,7 @@ namespace RelyITS
 			return result;
 
 		}
-        public static void Send(string queue, string data)
+		public static void Send(string queue, string data)
 		{
 			try
 			{
@@ -93,8 +69,8 @@ namespace RelyITS
 				string json = System.IO.File.ReadAllText(fileName);
 				var receiptJson = Newtonsoft.Json.JsonConvert.DeserializeObject<List<ReceiptJson>>(json);
 				var descReceiptJson = receiptJson.OrderBy(x => x.StoreID); //Group by StoreID
-                json = JsonConvert.SerializeObject(descReceiptJson);
-                using (IConnection connection = new ConnectionFactory().CreateConnection())
+				json = JsonConvert.SerializeObject(descReceiptJson);
+				using (IConnection connection = new ConnectionFactory().CreateConnection())
 				{
 					using (IModel channel = connection.CreateModel())
 					{
@@ -110,6 +86,6 @@ namespace RelyITS
 				Main();
 			}
 		}
-    }
+	}
 }
 
