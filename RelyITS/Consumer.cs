@@ -22,7 +22,8 @@ namespace RelyITS
                 {
                     var body = ea.Body.ToArray();
                     var message = Encoding.UTF8.GetString(body);
-                    Program.ReadAndWriteToJson(message);
+                    var processor = new JsonProcessor();
+                    processor.ReadAndWriteToJson(message);
                 };
 
                 channel.BasicConsume(queue: "Receipt", autoAck: true, consumer: consumer);
