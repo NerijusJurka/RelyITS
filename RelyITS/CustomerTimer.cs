@@ -15,8 +15,8 @@ namespace RelyITS
         }
         public void Start()
         {
-            //var dailyTime = DateTime.Now.AddSeconds(10).ToString("HH:mm:ss"); //Used for testing
-            var dailyTime = "13:00:00"; // Time to execute code
+            var dailyTime = DateTime.Now.AddSeconds(10).ToString("HH:mm:ss"); //Used for testing
+            //var dailyTime = "13:00:00"; // Time to execute code
             var timeParts = dailyTime.Split(new char[] { ':' });
 
             var now = DateTime.Now;
