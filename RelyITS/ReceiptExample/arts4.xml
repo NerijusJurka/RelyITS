@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<POSLog xmlns="http://www.nrf-arts.org/IXRetail/namespace/" xmlns:VRArtsPoslogExt="http://schemas.vismaretail.com/poslog/" MajorVersion="6" MinorVersion="0" FixVersion="0">
+	<Transaction VRArtsPoslogExt:PosType="RSPOS" VRArtsPoslogExt:Version="17.2.165.700" TrainingModeFlag="false" VRArtsPoslogExt:ZeroSales="true">
+		<BusinessUnit>
+			<UnitID>3000</UnitID>
+		</BusinessUnit>
+		<WorkstationID WorkstationLocation="1" TypeCode="POS" Mode="Retail">37</WorkstationID>
+		<SequenceNumber>4</SequenceNumber>
+		<TransactionID>1907220000300049014037042000</TransactionID>
+		<OperatorID AssociateID="xstse04" OperatorType="Cashier" OperatorName="xstse04">xstse04</OperatorID>
+		<CurrencyCode>SEK</CurrencyCode>
+		<ReceiptImage>
+			<ReceiptLine/>
+			<ReceiptLine>Apotek Rely</ReceiptLine>
+			<ReceiptLine/>
+			<ReceiptLine>Svetsarvägen 16, 171 93 Solna</ReceiptLine>
+			<ReceiptLine>www.relyits.se</ReceiptLine>
+			<ReceiptLine/>
+			<ReceiptLine>------------------------------------------</ReceiptLine>
+			<ReceiptLine>Kvitto:   037-00004      2019-07-22 13:36:54</ReceiptLine>
+			<ReceiptLine>Kassör:   xstse04</ReceiptLine>
+			<ReceiptLine>Org Nr:   5566196704 kr</ReceiptLine>
+			<ReceiptLine>------------------------------------------</ReceiptLine>
+			<ReceiptLine/>
+			<ReceiptLine/>
+			<ReceiptLine>   *** Makulerat ***</ReceiptLine>
+			<ReceiptLine/>
+			<ReceiptLine/>
+			<ReceiptLine>12302 OVESTERIN, VAGITOR  33,48</ReceiptLine>
+			<ReceiptLine/>
+			<ReceiptLine>   *** Makulerat ***</ReceiptLine>
+			<ReceiptLine> ===========</ReceiptLine>
+			<ReceiptLine>  TOTALT MAKULERAT 33,48</ReceiptLine>
+			<ReceiptLine/>
+			<ReceiptLine>  Moms       Belopp   Netto      Brutto   </ReceiptLine>
+			<ReceiptLine>   0%                 33,48      33,48    </ReceiptLine>
+			<ReceiptLine>------------------------------------------</ReceiptLine>
+			<ReceiptLine>KVITTENS AV MAKULERING</ReceiptLine>
+			<ReceiptLine/>
+			<ReceiptLine>__________________________________________</ReceiptLine>
+			<ReceiptLine>Kundens signatur</ReceiptLine>
+			<ReceiptLine>__________________________________________</ReceiptLine>
+			<ReceiptLine>Kassörens signatur</ReceiptLine>
+			<ReceiptLine/>
+			<VRArtsPoslogExt:ReceiptData>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GZIP</VRArtsPoslogExt:ReceiptData>
+		</ReceiptImage>
+		<RetailTransaction TransactionStatus="Canceled">
+			<LineItem CancelFlag="false" EntryMethod="Keyed">
+				<Sale VRArtsPoslogExt:ScanningItem="false" ItemSubType="Normal" ItemType="Stock">
+					<POSIdentity POSIDType="GTIN">
+						<POSItemID>7046265478027</POSItemID>
+					</POSIdentity>
+					<POSIdentity POSIDType="RSID">
+						<POSItemID>12302</POSItemID>
+					</POSIdentity>
+					<MerchandiseHierarchy Level="Group">271</MerchandiseHierarchy>
+					<Description TypeCode="Short">OVESTERIN, VAGITORIUM 0</Description>
+					<UnitCostPrice>33.48000</UnitCostPrice>
+					<SuggestedPrice>33.48000</SuggestedPrice>
+					<ExtendedAmount>33.48000</ExtendedAmount>
+					<Quantity Units="0.00" UnitOfMeasureCode="EA">1.00000</Quantity>
+					<Tax TaxSubType="Standard">
+						<Amount>0.00000</Amount>
+						<Percent>0.00</Percent>
+						<TaxGroupID Name="ArticleGroupCode">04999</TaxGroupID>
+					</Tax>
+					<LoyaltyAccount>
+						<LoyaltyProgram>
+							<Points Type="VRExt:LoyaltyEligible">0</Points>
+						</LoyaltyProgram>
+					</LoyaltyAccount>
+					<VRArtsPoslogExt:Supplier>101032</VRArtsPoslogExt:Supplier>
+					<VRArtsPoslogExt:SupplierName>TAMRO DISTRIBUTION AB</VRArtsPoslogExt:SupplierName>
+					<VRArtsPoslogExt:PriceType>1001</VRArtsPoslogExt:PriceType>
+				</Sale>
+				<SequenceNumber>1</SequenceNumber>
+				<DateTime>2019-07-22T13:35:38</DateTime>
+			</LineItem>
+			<Total TotalType="VRExt:TransactionVatRateAmount" VRArtsPoslogExt:VATRate="0.00" VRArtsPoslogExt:VATExclAmount="33.48000" VRArtsPoslogExt:VATAmount="0.00000">33.48000</Total>
+		</RetailTransaction>
+		<TillID/>
+		<BeginDateTime>2019-07-22T13:35:38</BeginDateTime>
+		<EndDateTime>2019-07-22T13:36:54</EndDateTime>
+	</Transaction>
+</POSLog>

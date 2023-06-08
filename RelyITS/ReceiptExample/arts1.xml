@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<POSLog xmlns="http://www.nrf-arts.org/IXRetail/namespace/" xmlns:VRArtsPoslogExt="http://schemas.vismaretail.com/poslog/" MajorVersion="6" MinorVersion="0" FixVersion="0">
+	<Transaction VRArtsPoslogExt:PosType="RSPOS" VRArtsPoslogExt:Version="17.2.165.700" TrainingModeFlag="false">
+		<BusinessUnit>
+			<UnitID>3004</UnitID>
+		</BusinessUnit>
+		<WorkstationID WorkstationLocation="1" TypeCode="POS" Mode="Retail">1</WorkstationID>
+		<SequenceNumber>3619</SequenceNumber>
+		<TransactionID>1907220000300457201001192000</TransactionID>
+		<OperatorID AssociateID="cashierid" OperatorType="Cashier" OperatorName="cashierid">1234</OperatorID>
+		<CurrencyCode>SEK</CurrencyCode>
+		<ReceiptImage>
+			<ReceiptLine/>
+			<ReceiptLine>Apotek Rely</ReceiptLine>
+			<ReceiptLine/>
+			<ReceiptLine/>
+			<ReceiptLine>Svetsarvägen 16, 171 93 Solna</ReceiptLine>
+			<ReceiptLine>www.relyits.se</ReceiptLine>
+			<ReceiptLine>------------------------------------------</ReceiptLine>
+			<ReceiptLine>Kvitto:   001-03619    2019-07-22 15:53:21</ReceiptLine>
+			<ReceiptLine>Kassör:   1234</ReceiptLine>
+			<ReceiptLine>Org Nr:   556619-6704 kr</ReceiptLine>
+			<ReceiptLine>------------------------------------------</ReceiptLine>
+			<ReceiptLine/>
+			<ReceiptLine/>
+			<ReceiptLine/>
+			<ReceiptLine>Varor:  998803100000233</ReceiptLine>
+			<ReceiptLine>100000 RECEPTVAROR 0%      22 041,88</ReceiptLine>
+			<ReceiptLine>  ===========</ReceiptLine>
+			<ReceiptLine>  ATT BETALA ( 1 ARTIKEL ) 22 041,88</ReceiptLine>
+			<ReceiptLine/>
+			<ReceiptLine>  AVRUNDNING 0,12</ReceiptLine>
+			<ReceiptLine>  KONTANT 22 042,00</ReceiptLine>
+			<ReceiptLine/>
+			<ReceiptLine>  TILLBAKA 0,00</ReceiptLine>
+			<ReceiptLine/>
+			<ReceiptLine/>
+			<ReceiptLine>  Moms       Belopp   Netto      Brutto   </ReceiptLine>
+			<ReceiptLine>   0%                 22 041,88  22 041,88</ReceiptLine>
+			<ReceiptLine/>
+			<ReceiptLine/>
+			<ReceiptLine>ÖPPETTIDER: MÅ-FR: 10.00-19.00</ReceiptLine>
+			<ReceiptLine>LÖ: 10-17 SÖ: 11-17</ReceiptLine>
+			<ReceiptLine>Öppet köp i 14 dagar mot kvitto.</ReceiptLine>
+			<ReceiptLine>Receptvaror, receptfria läkemedel,</ReceiptLine>
+			<ReceiptLine>kylvaror och bruten frp återköpes ej.</ReceiptLine>
+			<ReceiptLine>TACK OCH VÄLKOMMEN ÅTER!</ReceiptLine>
+			<ReceiptLine>APOTEK Rely KUNDKONTAKT: 0771-405 405</ReceiptLine>
+			<ReceiptLine/>
+			<ReceiptLine>9000030040001036199272</ReceiptLine>
+			<ReceiptLine/>
+			<VRArtsPoslogExt:ReceiptData>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</VRArtsPoslogExt:ReceiptData>
+		</ReceiptImage>
+		<RetailTransaction TransactionStatus="Finished">
+			<LineItem CancelFlag="false" EntryMethod="Keyed">
+				<Sale VRArtsPoslogExt:ScanningItem="false" ItemSubType="Normal" ItemType="VRExt:RXBag">
+					<POSIdentity POSIDType="GTIN">
+						<POSItemID>100000</POSItemID>
+					</POSIdentity>
+					<POSIdentity POSIDType="RSID">
+						<POSItemID>100000</POSItemID>
+					</POSIdentity>
+					<MerchandiseHierarchy Level="Group">610</MerchandiseHierarchy>
+					<SpecialOrderNumber>998803100000233</SpecialOrderNumber>
+					<Description TypeCode="Short">RECEPTVAROR 0% </Description>
+					<UnitCostPrice>22041.88000</UnitCostPrice>
+					<SuggestedPrice>22041.88000</SuggestedPrice>
+					<ExtendedAmount>22041.88000</ExtendedAmount>
+					<Quantity Units="0.00" UnitOfMeasureCode="EA">1.00000</Quantity>
+					<Tax TaxSubType="Standard">
+						<Amount>0.00000</Amount>
+						<Percent>0.00</Percent>
+						<TaxGroupID Name="ArticleGroupCode">04999</TaxGroupID>
+					</Tax>
+					<LoyaltyAccount>
+						<LoyaltyProgram>
+							<Points Type="VRExt:LoyaltyEligible">0</Points>
+						</LoyaltyProgram>
+					</LoyaltyAccount>
+					<VRArtsPoslogExt:PriceType>0</VRArtsPoslogExt:PriceType>
+				</Sale>
+				<SequenceNumber>1</SequenceNumber>
+				<DateTime>2019-07-22T15:53:11</DateTime>
+			</LineItem>
+			<LineItem CancelFlag="false">
+				<Tender TypeCode="Sale" TenderType="Cash" VRArtsPoslogExt:InternalTenderId="1">
+					<Amount>22042.00000</Amount>
+				</Tender>
+				<SequenceNumber>2</SequenceNumber>
+			</LineItem>
+			<LineItem CancelFlag="false">
+				<Tender>
+					<Rounding RoundingDirection="Up">0.12000</Rounding>
+				</Tender>
+				<SequenceNumber>3</SequenceNumber>
+			</LineItem>
+			<Total CurrencyCode="SEK" TotalType="TransactionNetAmount">22041.88000</Total>
+			<Total CurrencyCode="SEK" TotalType="TransactionTaxAmount">0.00000</Total>
+			<Total TotalType="TransactionPurchaseQuantity">1</Total>
+			<Total TotalType="VRExt:TransactionVatRateAmount" VRArtsPoslogExt:VATRate="0.00" VRArtsPoslogExt:VATExclAmount="22041.88000" VRArtsPoslogExt:VATAmount="0.00000">22041.88000</Total>
+		</RetailTransaction>
+		<TillID/>
+		<BeginDateTime>2019-07-22T15:53:11</BeginDateTime>
+		<EndDateTime>2019-07-22T15:53:21</EndDateTime>
+		<ControlTransaction>
+			<ApplicationEvent>CashDrawerOpen</ApplicationEvent>
+			<VRArtsPoslogExt:AuthorizedOpen>2019-07-22T15:53:21</VRArtsPoslogExt:AuthorizedOpen>
+		</ControlTransaction>
+	</Transaction>
+</POSLog>
